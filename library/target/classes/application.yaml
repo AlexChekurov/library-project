@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: library-service
+  security:
+    users:
+      - name: user
+        password: user_pass
+        roles: USER
+      - name: admin
+        password: admin_pass
+        roles: USER, ADMIN
+  cloud:
+    openfeign:
+      client:
+        config:
+          libraryServiceFeignClient:
+            url: ${LIBRARY_SERVICE_URL:http://localhost:8082/api/v1/library/books}
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: full
+  datasource:
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${spring.datasource.username}
+    username: ${DATABASE_USER:test_user}
+    password: ${DATABASE_PASSWORD:test_pass}
+logging:
+  level:
+    org.zalando.logbook: TRACE
+logbook:
+  predicate:
+    include:
+      - path: /api/**
+        methods:
+          - GET
+          - POST
+library-service:
+  client:
+    user: library
+    password: 4815162342
+    retry:
+      period: 150
+      max-period: 5000
+      max-attempts: 5
+  scheduler:
+    fixed-delay-duration: ${SEND_BOOK_TO_SERVICE_DELAY:PT1M}
+    max-attempts: 3

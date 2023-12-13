@@ -1,0 +1,46 @@
+services:
+  postgres-library:
+    image: postgres:15.3-alpine3.18
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_pass
+    volumes:
+      - ./library-create-db.sql:/docker-entrypoint-initdb.d/create_database.sql
+    restart: unless-stopped
+  postgres-library-service:
+    image: postgres:15.3-alpine3.18
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: test_user_1
+      POSTGRES_PASSWORD: test_pass_1
+    volumes:
+      - ./library-service-create-db.sql:/docker-entrypoint-initdb.d/create_database.sql
+    restart: unless-stopped
+  library-service:
+    depends_on:
+      - postgres-library-service
+    image: library-service:0.1.0
+    ports:
+      - "8082:8080"
+    environment:
+      - DATABASE_HOST=postgres-library-service
+      - DATABASE_PORT=5432
+      - DATABASE_USER=test_user_1
+      - DATABASE_PASSWORD=test_pass_1
+      - APPLICATION_PORT=8080
+  library:
+    depends_on:
+      - postgres-library
+      - library-service
+    image: library:0.1.0
+    ports:
+      - "8080:8080"
+    environment:
+      - LIBRARY_SERVICE_URL=http://library-service:8080/api/v1/library/books
+      - DATABASE_HOST=postgres-library
+      - DATABASE_PORT=5432
+      - DATABASE_USER=test_user
+      - DATABASE_PASSWORD=test_pass

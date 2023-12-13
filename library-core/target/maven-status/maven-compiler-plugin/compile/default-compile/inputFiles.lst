@@ -1,0 +1,8 @@
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/dto/ErrorMessageDto.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/dto/BookDto.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/dto/SuccessResponseDto.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/properties/AuthProperties.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/constant/CommonConstants.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/dto/BookRequestDto.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/config/AbstractSecurityConfig.java
+/Users/oleggalimov/Desktop/project/library-project/library-core/src/main/java/ru/home/library/core/rest/AbstractGlobalExceptionHandler.java

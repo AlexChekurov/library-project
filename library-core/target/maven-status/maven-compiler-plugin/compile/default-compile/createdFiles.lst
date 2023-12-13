@@ -1,0 +1,9 @@
+ru/home/library/core/properties/AuthProperties$UserProperty.class
+ru/home/library/core/dto/ErrorMessageDto.class
+ru/home/library/core/dto/BookRequestDto.class
+ru/home/library/core/dto/BookDto.class
+ru/home/library/core/config/AbstractSecurityConfig.class
+ru/home/library/core/rest/AbstractGlobalExceptionHandler.class
+ru/home/library/core/properties/AuthProperties.class
+ru/home/library/core/dto/SuccessResponseDto.class
+ru/home/library/core/constant/CommonConstants.class

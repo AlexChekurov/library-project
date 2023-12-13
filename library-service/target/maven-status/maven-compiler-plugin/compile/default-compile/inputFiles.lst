@@ -1,0 +1,8 @@
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/service/LibraryService.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/repository/BookInfoRepository.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/rest/LibraryController.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/LibraryServiceApp.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/rest/GlobalExceptionHandler.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/config/SecurityConfig.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/entity/BookInfo.java
+/Users/oleggalimov/Desktop/project/library-project/library-service/src/main/java/ru/home/libraryservice/exception/BookAlreadyExistsException.java

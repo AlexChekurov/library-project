@@ -1,0 +1,13 @@
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/exception/IntegrityViolationException.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/LibraryApp.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/client/LibraryServiceFeignClient.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/entity/Book.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/config/FeignClientConfig.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/mapper/EntityMapper.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/rest/GlobalExceptionHandler.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/config/SecurityConfig.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/service/LibraryService.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/rest/BooksController.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/repository/BookRepository.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/service/BookService.java
+/Users/oleggalimov/Desktop/project/library-project/library/src/main/java/ru/home/library/exception/BookingException.java

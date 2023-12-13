@@ -1,0 +1,14 @@
+ru/home/library/repository/BookRepository.class
+ru/home/library/service/LibraryService.class
+ru/home/library/service/exception/IntegrityViolationException.class
+ru/home/library/service/BookService.class
+ru/home/library/config/FeignClientConfig.class
+ru/home/library/client/LibraryServiceFeignClient.class
+ru/home/library/rest/GlobalExceptionHandler.class
+ru/home/library/config/SecurityConfig.class
+ru/home/library/exception/BookingException.class
+ru/home/library/mapper/EntityMapper.class
+ru/home/library/LibraryApp.class
+ru/home/library/entity/Book.class
+ru/home/library/rest/BooksController.class
+ru/home/library/mapper/EntityMapperImpl.class
